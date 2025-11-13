@@ -87,14 +87,18 @@
                     "FieldName": "name",
                     "InputType": "text",
                     "ParamFieldName": "name",
-                    "Placeholder": "Group name"
+                    "Placeholder": "Group name",
+                    "Editable": true,
+                    "Visible": true
                 },
                 {
                     "DisplayName": "Group Password",
                     "FieldName": "password",
                     "InputType": "text",
                     "ParamFieldName": "password",
-                    "Placeholder": "Password (optional)"
+                    "Placeholder": "Password (optional)",
+                    "Editable": true,
+                    "Visible": true
                 },
                 {
                     "DisplayName": "Permissions",
@@ -102,7 +106,9 @@
                     "InputType": "list",
                     "Special": "array:text",
                     "ParamFieldName": "permissions",
-                    "Placeholder": "Comma-separated permissions (e.g. admin, builder, moderator)"
+                    "Placeholder": "Comma-separated permissions (e.g. admin, builder, moderator)",
+                    "Editable": true,
+                    "Visible": true
                 }
             ],
             "EnumValues": {}
