@@ -81,7 +81,31 @@
         "ParamFieldName": "$.userGroups",
         "DefaultValue": "[]",
         "Placeholder": "Add user groups with name, password, and permissions.",
-        "EnumValues": {}
+            "ObjectFields": [
+                {
+                    "DisplayName": "Group Name",
+                    "FieldName": "name",
+                    "InputType": "text",
+                    "ParamFieldName": "name",
+                    "Placeholder": "Group name"
+                },
+                {
+                    "DisplayName": "Group Password",
+                    "FieldName": "password",
+                    "InputType": "text",
+                    "ParamFieldName": "password",
+                    "Placeholder": "Password (optional)"
+                },
+                {
+                    "DisplayName": "Permissions",
+                    "FieldName": "permissions",
+                    "InputType": "list",
+                    "Special": "array:text",
+                    "ParamFieldName": "permissions",
+                    "Placeholder": "Comma-separated permissions (e.g. admin, builder, moderator)"
+                }
+            ],
+            "EnumValues": {}
     },
     {
         "DisplayName": "Player Limit",
