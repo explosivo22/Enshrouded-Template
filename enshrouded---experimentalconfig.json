@@ -76,10 +76,11 @@
         "Description": "Configure groups of players, passwords, and permissions. See <a href='https://enshrouded.zendesk.com/hc/en-us/articles/19191581489309-Server-Roles-Configuration' target='_blank'>Server Roles Documentation</a> for format.",
         "Keywords": "server,roles,password,permissions,userGroups",
         "FieldName": "userGroups",
-        "InputType": "textarea",
+        "InputType": "list",
+        "Special": "array:object",
         "ParamFieldName": "$.userGroups",
-        "DefaultValue": "",
-        "Placeholder": "[\n  {\n    \"name\": \"Admins\",\n    \"password\": \"adminpass\",\n    \"permissions\": {\n      \"general\": { \"canJoin\": true, \"canChat\": true },\n      \"building\": { \"canBuild\": true, \"canDestroy\": true },\n      \"admin\": { \"canKick\": true, \"canBan\": true, \"canManageServer\": true }\n    }\n  }\n]",
+        "DefaultValue": "[]",
+        "Placeholder": "Add user groups with name, password, and permissions.",
         "EnumValues": {}
     },
     {
